@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 <body>
     <header class="header"></header>
@@ -33,16 +42,48 @@
                 <h2 class="heading">НОВЫЕ ВОЗМОЖНОСТИ потратить баллы. СКОРО</h2>
                 <ul class="new__list">
                     <li class="new__item">
-                        <h4 class="new__heading">Меняйте мир к лучшему</h4>
+                        <h4 class="new__heading">Меняйте мир <br> к лучшему</h4>
                         <img src="img/info1.png" alt="картинка" class="new__img">
-                        <p class="discription">Потратьте ваши баллы IQOS CLUB на то, чтобы изменить мир к лучшему – участвуйте в благотворительных проектах.</p>
+                        <p class="new__discription">Потратьте ваши баллы <br> IQOS CLUB на то, чтобы изменить <br> мир к лучшему – участвуйте <br> в благотворительных проектах.</p>
                     </li>
                     <li class="new__item">
-                        <h4 class="new__heading">Начните изменения c себя</h4>
+                        <h4 class="new__heading">Начните <br> изменения c себя</h4>
                         <img src="img/info2.png" alt="картинка" class="new__img">
-                        <p class="discription">За ваши баллы IQOS CLUB вы можете научиться новому, прокачать свои навыки и попробовать сделать что-то необыкновенное.</p>
+                        <p class="new__discription">За ваши баллы IQOS CLUB <br> вы можете научиться новому, прокачать свои навыки <br> и попробовать сделать <br> что-то необыкновенное.</p>
                     </li>
                 </ul>
+                <a href="" class="new__link">СКОЛЬКО У МЕНЯ БАЛЛОВ?</a>
+            </div>
+        </section>
+        <section class="social">
+            <div class="container social__container">
+                <h2 class="heading">БУДЬТЕ В КУРСЕ ПОСЛЕДНИХ НОВОСТЕЙ, <br> ПОДПИСЫВАЙТЕСЬ НА ОФИЦИАЛЬНЫЕ СООБЩЕСТВА IQOS</h2>
+                <ul class="social__list">
+                    <span class="social__item">ПОДПИСАТЬСЯ:</span>
+                    <a class="social__item" href=""><img src="img/instagram.svg" alt="инстаграм"></a>
+                    <a class="social__item" href=""><img src="img/vk.svg" alt="вконтакте"></a>
+                </ul>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container questions__container">
+                <h3 class="questions__title">Остались вопросы?</h3>
+                <div id="accordion">
+                    <h4>Я слышал, что IQOS CLUB будет меняться. Что это значит?</h4>
+                    <div></div>
+                    <h4>Что будет с моим уровнем лояльности?</h4>
+                    <div></div>
+                    <h4>Что будет с моими накопленными баллами?</h4>
+                    <div>Мы услышали желание пользователей потратить свои баллы IQOS CLUB и для этого запустили в ноябре
+                    конкурсы «Баллы на удачу» и «Аукцион впечатлений». Но это еще не все!
+                    Следите за новостями, чтобы быть в курсе и ничего не пропустить.</div>
+                    <h4>Почему вы это делаете?</h4>
+                    <div></div>
+                    <h4>Что будет с моими привилегиями?</h4>
+                    <div></div>
+                    <h4>Мои ваучеры тоже сгорят?</h4>
+                    <div></div>
+                </div>
             </div>
         </section>
     </main>

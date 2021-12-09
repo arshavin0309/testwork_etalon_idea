@@ -7,16 +7,19 @@ a {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1180px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .hero {
+    position: relative;
     min-height: 680px;
     background: url('../img/hero.png') no-repeat;
     background-size: cover;
@@ -24,7 +27,6 @@ ul {
 
 .hero__container {
     display: flex;
-    padding-top: 150px;
     flex-direction: column;
     align-items: center;
 }
@@ -35,6 +37,7 @@ ul {
 }
 
 .hero__title {
+    text-transform: uppercase;
     font-size: 60px;
     line-height: 80px;
     color: #FFFFFF;
@@ -47,7 +50,8 @@ ul {
 }
 
 .hero__link {
-    margin-top: auto;
+    position: absolute;
+    bottom: 25px;
     padding-bottom: 30px;
     font-size: 30px;
     line-height: 40px;
@@ -63,6 +67,7 @@ ul {
 }
 
 .heading {
+    text-transform: uppercase;
     text-align: center;
     font-size: 30px;
     line-height: 40px;
@@ -78,7 +83,14 @@ ul {
     background: #EAE7E7;
 }
 
+.new__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .new__heading {
+    padding: 25px 15px;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 22px;
     color: #765151;
@@ -86,13 +98,63 @@ ul {
 
 .new__list {
     display: flex;
+    margin-top: 35px;
+    justify-content: center;
 }
 
 .new__item {
     width: 270px;
+    margin: 0;
     min-height: 380px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #EAE7E7;
     background: #FFFFFF;
+    text-align: center;
+}
+
+.new__item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.new__img {
+    margin: 0;
+}
+
+.new__discription {
+    padding: 25px 15px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.new__link {
+    margin-top: 35px;
+    padding: 12px 30px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F0E3DF;
+    background: #765151;
+    border: 1px solid #765151;
+}
+
+.social {
+    background: #F0E3DF;
+}
+
+.social__list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__item {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    color: #765151;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 15px;
 }
