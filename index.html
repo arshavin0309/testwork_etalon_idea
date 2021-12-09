@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Тестовая работа</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header class="header"></header>
     <main>
         <section class="hero">
             <div class="container hero__container">
-                <img class="hero__logo" src="img/Frame.svg" alt="Логотип">
+                <a href="">
+                    <img class="hero__logo" src="img/Frame.svg" alt="Логотип">
+                </a>
                 <h1 class="hero__title">Баллы на финишной прямой</h1>
                 <h3 class="hero__heading">Тратьте ваши баллы IQOS CLUB на высокие цели</h3>
                 <a href="" class="hero__link">Узнать больше</a>
@@ -33,13 +32,13 @@
                 <h2 class="heading">IQOS CLUB МЕНЯЕТСЯ</h2>
                 <p class="discription">Недавно у вас была возможность использовать свои баллы IQOS CLUB в конкурсах «Баллы на удачу» и «Аукцион
                 впечатлений».</p>
-                <p class="discription">И это только начало!Скоро откроется еще больше возможностей использовать ваши баллы,чтобы они не
+                <p class="discription">И это только начало! <br> Скоро откроется еще больше возможностей использовать ваши баллы,чтобы они не
                 пропали.</p>
             </div>
         </section>
         <section class="new">
             <div class="container new__container">
-                <h2 class="heading">НОВЫЕ ВОЗМОЖНОСТИ потратить баллы. СКОРО</h2>
+                <h2 class="heading">НОВЫЕ ВОЗМОЖНОСТИ <br class="br"> потратить баллы. СКОРО</h2>
                 <ul class="new__list">
                     <li class="new__item">
                         <h4 class="new__heading">Меняйте мир <br> к лучшему</h4>
@@ -59,7 +58,7 @@
             <div class="container social__container">
                 <h2 class="heading">БУДЬТЕ В КУРСЕ ПОСЛЕДНИХ НОВОСТЕЙ, <br> ПОДПИСЫВАЙТЕСЬ НА ОФИЦИАЛЬНЫЕ СООБЩЕСТВА IQOS</h2>
                 <ul class="social__list">
-                    <span class="social__item">ПОДПИСАТЬСЯ:</span>
+                    <div class="social__item">ПОДПИСАТЬСЯ:</div>
                     <a class="social__item" href=""><img src="img/instagram.svg" alt="инстаграм"></a>
                     <a class="social__item" href=""><img src="img/vk.svg" alt="вконтакте"></a>
                 </ul>
@@ -68,21 +67,62 @@
         <section class="questions">
             <div class="container questions__container">
                 <h3 class="questions__title">Остались вопросы?</h3>
+                <div class="questions__cat">Выберите категорию вопроса:</div>
                 <div id="accordion">
-                    <h4>Я слышал, что IQOS CLUB будет меняться. Что это значит?</h4>
-                    <div></div>
-                    <h4>Что будет с моим уровнем лояльности?</h4>
-                    <div></div>
-                    <h4>Что будет с моими накопленными баллами?</h4>
+                    <h4>
+                        <div>Я слышал, что IQOS CLUB будет меняться. Что это значит?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
+                    <div>Да, действительно, на основании обратной связиот пользователей IQOS мы приняли решение, что программу необходимо менять, чтобы она соответствовала ожиданиями пожеланиям лояльных пользователей. Также пересмотр программы обусловлен новыми законодательными требованиями в отношении нашей продукции.
+                    </div>
+
+                    <h4>
+                        <div>Что будет с моим уровнем лояльности?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
+                    <div>Скоро здесь появится описание</div>
+
+                    <h4>
+                        <div>Что будет с моими накопленными баллами?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
                     <div>Мы услышали желание пользователей потратить свои баллы IQOS CLUB и для этого запустили в ноябре
                     конкурсы «Баллы на удачу» и «Аукцион впечатлений». Но это еще не все!
                     Следите за новостями, чтобы быть в курсе и ничего не пропустить.</div>
-                    <h4>Почему вы это делаете?</h4>
-                    <div></div>
-                    <h4>Что будет с моими привилегиями?</h4>
-                    <div></div>
-                    <h4>Мои ваучеры тоже сгорят?</h4>
-                    <div></div>
+
+                    <h4>
+                        <div>Почему вы это делаете?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
+                    <div>Скоро здесь появится описание</div>
+
+                    <h4>
+                        <div>Что будет с моими привилегиями?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
+                    <div>Скоро здесь появится описание</div>
+
+                    <h4>
+                        <div>Мои ваучеры тоже сгорят?</div>
+                        <svg class="accordion__arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.960938 1.5625L7.96092 8.5625L14.9609 1.5625" stroke="#966C33" stroke-width="2"/>
+                        </svg>
+                    </h4>
+                    <div>Скоро здесь появится описание</div>
+                </div>
+                <div class="questions__info">
+                    C полным списком вопросов можно <br> 
+                    <a class="questions__link" href="">ознакомиться по ссылке</a>
                 </div>
             </div>
         </section>
